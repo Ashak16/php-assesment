@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trends</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-search h1 {
+    color: white;
+    margin: 0;
+}
+
+nav form {
+    margin-left: 20px;
+}
+
+nav form input[type="search"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+nav .nav-buttons {
+    display: flex;
+}
+
+.nav-buttons .button {
+    color: white;
+    background-color:#9081ff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.nav-buttons .button:hover {
+    background-color:#9081ff ;
+}
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .content {
+            padding: 20px;
+            margin-top: 200px; 
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <nav>
+                <div class="logo-search">
+                    <h1>Yours Trends</h1>
+                    <form>
+                        <input type="search" name="search" id="search" placeholder="Search...">
+                    </form>
+                </div>
+                <div class="nav-buttons">
+                    <button class="button" onclick="viewBlog()">Blog</button>
+                    <button class="button" onclick="gridView()">Shop Product</button>
+                </div>
+            </nav>      
+    </header>
+
+    <div class="content">
+        <h2>Welcome to our Yours Trends!</h2>
+        <p>Explore our wide range of products and enjoy great deals.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Yours Trends. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function viewBlog() {
+            window.location.href = "blog.php"; // Redirect to blog.php when button is clicked
+        }
+
+        function gridView() {
+            window.location.href = "shop.php"; // Redirect to shop.php when button is clicked
+        }
+    </script>
+</body>
+</html>
+
